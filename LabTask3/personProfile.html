@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Task-3</title>
+</head>
+<body>
+
+<form onsubmit="return validatePersonProfile();">
+<table border="1" width="500" cellpadding="8" cellspacing="0" align="center">
+    <tr>
+        <th colspan="3">
+            <h2>PERSON PROFILE</h2>
+        </th>
+    </tr>
+
+    <tr>
+        <td>Name</td>
+        <td colspan="2">
+            <input type="text" id="name">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Email</td>
+        <td colspan="2">
+            <input type="text" id="email">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Gender</td>
+        <td colspan="2">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </td>
+    </tr>
+
+    <tr>
+        <td>Date of Birth</td>
+        <td colspan="2">
+            <input type="text" id="dd" size="2"> /
+            <input type="text" id="mm" size="2"> /
+            <input type="text" id="yyyy" size="4">
+            (dd/mm/yyyy)
+        </td>
+    </tr>
+
+    <tr>
+        <td>Blood Group</td>
+        <td colspan="2">
+            <select id="blood">
+                <option value="">Select</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>O+</option>
+                <option>O-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Degree</td>
+        <td colspan="2">
+            <input type="checkbox" name="degree"> SSC
+            <input type="checkbox" name="degree"> HSC
+            <input type="checkbox" name="degree"> BSc.
+            <input type="checkbox" name="degree"> MSc.
+        </td>
+    </tr>
+
+    <tr>
+        <td>Photo</td>
+        <td colspan="2">
+            <input type="file" id="photo">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="3" align="right">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </td>
+    </tr>
+
+</table>
+</form>
+
+<script src="personProfile.js"></script>
+</body>
+</html>
